@@ -3,14 +3,18 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), sentryVitePlugin({
-    org: "jsm-slj",
-    project: "javascript-react"
-  })],
-
+  plugins: [
+    react(),
+    tailwindcss(),
+    sentryVitePlugin({
+      org: "jsm-slj",
+      project: "javascript-react",
+    }),
+  ],
   build: {
-    sourcemap: true
-  }
+    minify: false,
+    sourcemap: true,
+  },
+  base: './', // ✅ use relative path
 });
