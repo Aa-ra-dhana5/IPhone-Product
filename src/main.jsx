@@ -10,7 +10,7 @@ Sentry.init({
   dsn: "https://799852ea79b070a00d1f55f7b2564608@o4509094998704128.ingest.us.sentry.io/4509095005257728",
   integrations: [
     Sentry.browserTracingIntegration(),
-    
+
     Sentry.reactRouterV6BrowserTracingIntegration({
       useEffect: React.useEffect, //here we informed that we are using react
     }),
