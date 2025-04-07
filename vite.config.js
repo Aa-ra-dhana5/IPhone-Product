@@ -16,5 +16,5 @@ export default defineConfig({
     minify: false,
     sourcemap: true,
   },
-  base: './', // ✅ use relative path
+  base: '/IPhone-Product', // ✅ use relative path
 });
